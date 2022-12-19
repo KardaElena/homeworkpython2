@@ -12,10 +12,5 @@ for i in range(1, n+1):
     list_n.append(round(((1+1/i)**i), 2))
     summ = summ + i
 
-# while len(list_n) < n+1:
-#     list_n.append((1+1/n)**n)  
-#     n = list_n[len(list_n)-1]
-#     summ = summ + n
-
 print(list_n)
 print(summ)
