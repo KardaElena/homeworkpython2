@@ -7,13 +7,15 @@ n = int(input('Введите n: '))
 list_n = []
 summ = 0
 
-while len(list_n) < n+1:
-    list_n.append((1+1/n)**n)  # И здесь, и на обычном калькуляторе по формуле получается не такая сумма, как в примере. Либо я не поняла задание, либо в нем ошибка.
-    n = list_n[len(list_n)-1]
-    summ = summ + n
+
+for i in range(1, n+1):
+    list_n.append(round(((1+1/i)**i), 2))
+    summ = summ + i
+
+# while len(list_n) < n+1:
+#     list_n.append((1+1/n)**n)  
+#     n = list_n[len(list_n)-1]
+#     summ = summ + n
 
 print(list_n)
 print(summ)
-
-
-
